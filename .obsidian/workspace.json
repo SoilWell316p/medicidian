@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "b86706dd0bd19177",
+    "type": "split",
+    "children": [
+      {
+        "id": "5430319486c8a873",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3f386980e589b06",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1c426d1bceac9fe4",
+    "type": "split",
+    "children": [
+      {
+        "id": "b2cd1e56b4ca9a74",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b7efb3795420835",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "bcfed3b1ff42342e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ba5fb3263705caea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "fe39e39459d788a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "c12-眼科/c129999-ぶどう膜炎.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "c129999-ぶどう膜炎"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "682b1294ed2b8fe9",
+    "type": "split",
+    "children": [
+      {
+        "id": "0449daf27c0c317e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68195b12d40495c4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "c15-小児科/c1507-小児科の代謝内分泌/c150721-Wilson病.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for c150721-Wilson病"
+            }
+          },
+          {
+            "id": "7f8be13ba8f39804",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "c15-小児科/c1507-小児科の代謝内分泌/c150721-Wilson病.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from c150721-Wilson病"
+            }
+          },
+          {
+            "id": "57de81f6ffed15b9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6aa8afc6d61f432b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "c15-小児科/c1507-小児科の代謝内分泌/c150721-Wilson病.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of c150721-Wilson病"
+            }
+          },
+          {
+            "id": "a16036a8b7e26e49",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "c6167d4d4ae5b173",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "d3f386980e589b06",
+  "lastOpenFiles": [
+    "c00-症候学/00-moc-symptoms.md",
+    "dataviewjs-test.md",
+    "template/000-origin.md",
+    "c12-眼科/c129999-視神経炎.md",
+    "c12-眼科/12-moc-diseases.md",
+    "c03-代謝内分泌/c039999-sym-やせ.md",
+    "c14-皮膚科/c149999-多形皮膚萎縮.md",
+    "c01-消化器/c019999-門脈圧亢進症.md",
+    "c01-消化器/c019999-劇症肝炎.md",
+    "c06-免疫膠原病/c0603-結合組織疾患/c060304-多発性・皮膚筋炎.md",
+    "c14-皮膚科/c149999-悪性黒色腫.md",
+    "c14-皮膚科/c149999-アトピー性皮膚炎.md",
+    "c14-皮膚科/c140000-test-白色皮膚描記法.md",
+    "c12-眼科/c129999-原発閉塞隅角緑内障.md",
+    "desktop.ini",
+    "c14-皮膚科/c149999-Vogt-小柳-原田病.md",
+    "c12-眼科/c120000-test-光干渉断層計.md",
+    "c12-眼科/c129999-糖尿病網膜症.md",
+    "c12-眼科/c129999-test-虹彩ルベオーシス.md",
+    "c12-眼科/c120000-tre-抗VEGF抗体硝子体内注射.md",
+    "c12-眼科/c129999-網膜剥離.md",
+    "c08-腎泌尿器/c0805-尿細管・間質性疾患/c081305-尿細管性アシドーシスI型.md",
+    "c08-腎泌尿器/c0805-尿細管・間質性疾患/c081305-尿細管性アシドーシスII型 (RTA II).md",
+    "c08-腎泌尿器/c0805-尿細管・間質性疾患/c081301-Fanconi症候群.md",
+    "c03-代謝内分泌/c039999-★甲状腺機能低下症.md",
+    "c00-分野横断/c000000-tre-拮抗薬まとめ.md",
+    "c17-中毒/c1703-有機溶剤・有機化学物質/c170301-トルエン中毒.md",
+    "c06-感染症/c0602-消化器の感染症/desktop.ini",
+    "c07-脳神経/c0706-脊髄障害/c0706-総論/desktop.ini",
+    "c07-脳神経/c0700-総論/c070000-sym-歩行の異常/desktop.ini",
+    "c11-運動器整形外科 1",
+    "c00-分野横断",
+    "c00-症候学",
+    "03-diseases",
+    "04-treatments",
+    "02-tests",
+    "Untitled.canvas",
+    "Pasted image 20241206175557.png",
+    "Pasted image 20240926173312.png"
+  ]
+}

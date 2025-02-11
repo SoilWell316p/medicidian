@@ -1,0 +1,26 @@
+---
+aliases: 
+tags:
+  - "#bacteria"
+status:
+---
+## 疫学
+---
+## 分類
+---
+## 感染経路と潜伏期間
+---
+## 症状と疾患
+---
+## 検査
+---
+## 治療
+---
+## セットで覚える疾患・病原微生物
+---
+### other linked files
+```dataviewjs
+dv.list(
+dv.pages(`[[${this.currentFilePath}]]`)
+	.map(page => page.file.link))
+```

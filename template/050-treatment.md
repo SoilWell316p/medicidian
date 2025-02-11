@@ -1,0 +1,18 @@
+---
+aliases: 
+tags:
+  - "#treat"
+status:
+---
+## 概要
+---
+## 適応
+---
+## 禁忌
+---
+### other linked files
+```dataviewjs
+dv.list(
+dv.pages(`[[${this.currentFilePath}]]`)
+	.map(page => page.file.link))
+```

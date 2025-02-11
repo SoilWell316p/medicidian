@@ -1,0 +1,107 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "file:/^.{7}-sym",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "file:/^.{7}-vit",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "file:/^.{7}-test",
+      "color": {
+        "a": 1,
+        "rgb": 1697496
+      }
+    },
+    {
+      "query": "file:/^.{7}-tre",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "file:/^.{7}-chr",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "file:/^.{7}-path",
+      "color": {
+        "a": 1,
+        "rgb": 10944762
+      }
+    },
+    {
+      "query": "file:/^.{7}-phy",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "file:/^.{7}-aus",
+      "color": {
+        "a": 1,
+        "rgb": 15394401
+      }
+    },
+    {
+      "query": "file:/^.{7}-img",
+      "color": {
+        "a": 1,
+        "rgb": 6150843
+      }
+    },
+    {
+      "query": "file:/^.{7}-blood",
+      "color": {
+        "a": 1,
+        "rgb": 16057605
+      }
+    },
+    {
+      "query": "file:/^.{7}-ecg",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "file:/^.{7}-anat",
+      "color": {
+        "a": 1,
+        "rgb": 11226982
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -3,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 0.411512027491409,
+  "collapse-forces": false,
+  "centerStrength": 0.406574394463668,
+  "repelStrength": 10.1374570446735,
+  "linkStrength": 1,
+  "linkDistance": 393,
+  "scale": 0.11493372800997662,
+  "close": true
+}
