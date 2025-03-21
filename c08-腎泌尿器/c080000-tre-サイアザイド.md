@@ -1,3 +1,9 @@
+---
+aliases: 
+tags:
+  - "#treat"
+status:
+---
 ## 分類・作用機序
 ---
 ## 適応
@@ -7,4 +13,11 @@
 ### 代謝・排泄経路
 ---
 ## 副作用・禁忌
+---
+### other linked files
+```dataviewjs
+dv.list(
+dv.pages(`[[${this.currentFilePath}]]`)
+	.map(page => page.file.link))
+```
 

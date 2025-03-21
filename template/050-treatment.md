@@ -10,6 +10,8 @@ status:
 ---
 ## 禁忌
 ---
+## 合併症
+---
 ### other linked files
 ```dataviewjs
 dv.list(
