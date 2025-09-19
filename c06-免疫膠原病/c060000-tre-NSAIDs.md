@@ -1,5 +1,11 @@
+---
+aliases:
+  - アスピリン
+tags:
+  - "#treat"
+status:
+---
 ## 分類・作用機序
-- 
 ---
 ## 適応
 ---
@@ -14,3 +20,11 @@
 	- 胃潰瘍
 	- 腎障害
 - 腎血流の低下により[[c020000-sym-浮腫]]をきたすこともある。
+---
+### other linked files
+```dataviewjs
+dv.list(
+dv.pages(`[[${this.currentFilePath}]]`)
+	.map(page => page.file.link))
+```
+

@@ -3,105 +3,147 @@
   "search": "",
   "showTags": false,
   "showAttachments": true,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "file:/^.{7}-sym",
+      "query": "file:c00",
       "color": {
         "a": 1,
-        "rgb": 14048348
+        "rgb": 16645372
       }
     },
     {
-      "query": "file:/^.{7}-vit",
-      "color": {
-        "a": 1,
-        "rgb": 14069084
-      }
-    },
-    {
-      "query": "file:/^.{7}-test",
-      "color": {
-        "a": 1,
-        "rgb": 1697496
-      }
-    },
-    {
-      "query": "file:/^.{7}-tre",
-      "color": {
-        "a": 1,
-        "rgb": 6084188
-      }
-    },
-    {
-      "query": "file:/^.{7}-chr",
-      "color": {
-        "a": 1,
-        "rgb": 6053078
-      }
-    },
-    {
-      "query": "file:/^.{7}-path",
-      "color": {
-        "a": 1,
-        "rgb": 10944762
-      }
-    },
-    {
-      "query": "file:/^.{7}-phy",
-      "color": {
-        "a": 1,
-        "rgb": 14701233
-      }
-    },
-    {
-      "query": "file:/^.{7}-aus",
-      "color": {
-        "a": 1,
-        "rgb": 15394401
-      }
-    },
-    {
-      "query": "file:/^.{7}-img",
-      "color": {
-        "a": 1,
-        "rgb": 6150843
-      }
-    },
-    {
-      "query": "file:/^.{7}-blood",
-      "color": {
-        "a": 1,
-        "rgb": 16057605
-      }
-    },
-    {
-      "query": "file:/^.{7}-ecg",
+      "query": "file:c01 OR file:01-moc",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "file:/^.{7}-anat",
+      "query": "file:c02 OR file:02-moc",
       "color": {
         "a": 1,
-        "rgb": 11226982
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "file:c03 OR file:03-moc",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "file:c04 OR file:04-moc",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "file:c05 OR file:05-moc",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "file:c06 OR file:06-moc",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "file:c07 OR file:07-moc",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
+    },
+    {
+      "query": "file:c08 OR file:08-moc",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "file:c09 OR file:09-moc",
+      "color": {
+        "a": 1,
+        "rgb": 13834007
+      }
+    },
+    {
+      "query": "file:c10 OR file:10-moc",
+      "color": {
+        "a": 1,
+        "rgb": 15563020
+      }
+    },
+    {
+      "query": "file:c11 OR file:11-moc",
+      "color": {
+        "a": 1,
+        "rgb": 327424
+      }
+    },
+    {
+      "query": "file:c12 OR file:12-moc",
+      "color": {
+        "a": 1,
+        "rgb": 54783
+      }
+    },
+    {
+      "query": "file:c13 OR file:13-moc",
+      "color": {
+        "a": 1,
+        "rgb": 14810880
+      }
+    },
+    {
+      "query": "file:c14 OR file:14-moc",
+      "color": {
+        "a": 1,
+        "rgb": 16774272
+      }
+    },
+    {
+      "query": "file:c15 OR file:15-moc",
+      "color": {
+        "a": 1,
+        "rgb": 8421631
+      }
+    },
+    {
+      "query": "file:c16 OR file:16-moc",
+      "color": {
+        "a": 1,
+        "rgb": 11777023
+      }
+    },
+    {
+      "query": "file:00-moc",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
       }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": -2.2,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 0.212144082332762,
+  "nodeSizeMultiplier": 1.00103351080489,
+  "lineSizeMultiplier": 0.1,
   "collapse-forces": false,
-  "centerStrength": 0.406574394463668,
-  "repelStrength": 16.8929184023524,
+  "centerStrength": 0.201064829314125,
+  "repelStrength": 20,
   "linkStrength": 1,
-  "linkDistance": 393,
-  "scale": 0.11568793982716094,
+  "linkDistance": 298,
+  "scale": 0.05179805327963128,
   "close": true
 }

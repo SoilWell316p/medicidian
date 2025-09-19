@@ -10,13 +10,11 @@ Zettelkastenの大きな特徴は、知識の階層ではなく、繫がりを�
 
 ## Wikipediaゴルフと最短経路問題
 Obsidianでは、ファイルの中に別ファイルへのリンクを作成することが出来ます。最終的にオリジナルのwikipediaができるわけです。そういえば、みなさんwikipediaで[ゴルフ](https://ja.wikipedia.org/wiki/Wikipedia:Wikipedia%E3%82%B4%E3%83%AB%E3%83%95)が出来るのはご存じでしょうか（唐突）。あるファイルから、別のファイルまで、リンクを踏んで何ステップで到達できるか競うというものです。今回は、Obsidianのプラグイン機能を使って"Wikipediaゴルフ"を実装してみました。
-
-話はガラッと変わって競技プログラミングについて語ります。
+Obsidianにはさまざまなコミュニティプラグイン機能があります。[DataviewJS](https://blacksmithgu.github.io/obsidian-dataview/api/intro/)というプラグイン機能は、MDファイルにJavaScriptのコードを挿入することで、Vault内のデータに対して様々なクエリ操作を行うことが出来る機能です。どうやらテーブルやToDoリストの作成に便利らしいですが、今回は本来の機能からは逸脱してWikipediaiゴルフゲーム実装にこの機能を使ってみることにしました。
+ソースコードは下記のとおりです。詳細は省きますが、リンク関係でひとつながりになっているグループにファイルを分けるタスクを深さ優先探索で実行し、経路復元を含めた最短経路探索を幅優先探索で解いています。
 
 ```js
 // find connected components
-dv.paragraph("##### task 1: find connected components #####")
-
 const files = dv.pages()
     .filter(p => p.file.folder.match(/^c\d{2}-.+/))
     .filter(p => !p.file.name.includes("-moc-"))
@@ -41,18 +39,6 @@ files.forEach(f => {
 	graph.set(f.path, uniqueLinks);
 });
 
-// test 1
-const num = Math.floor(Math.random() * 300)
-
-let filepath = files[num].path
-let nodes = graph.get(filepath)
-dv.paragraph(`selected file: ${filepath}`)
-dv.paragraph(`linked files: \n ${nodes}`)
-dv.paragraph("task 1 completed")
-dv.paragraph("---")
-
-dv.paragraph("##### task 2: group files #####")
-
 // depth first search
 function dfs(node, group) {
 	if (visited.has(node)) return;
@@ -62,7 +48,7 @@ function dfs(node, group) {
 	graph.get(node).forEach(neighbor => dfs(neighbor, group));
 }
 
-// apply dfs to each node
+// apply dfs to each node to make components
 files.forEach(f => {
 	if (!visited.has(f.path)) {
 		let group = [];
@@ -71,60 +57,6 @@ files.forEach(f => {
 	}
 });
 
-// test 2
-dv.paragraph(`number of components: ${components.length}`);
-dv.paragraph("task 2 completed")
-dv.paragraph("---")
-
-dv.paragraph("##### task 3: find shortest steps (bfs) #####")
-
-// broadth first search
-function shortestStep(graph, start, goal) {
-	if (start === goal) return 0;
-
-	let queue = [[start, 0]];
-	let visitedNodes = new Set([start]);
-
-	while (queue.length > 0) {
-		let [current, steps] = queue.shift();
-		for (let neighbor of (graph.get(current))) {
-			if (neighbor === goal) return steps + 1;
-			if (!visitedNodes.has(neighbor)) {
-				visitedNodes.add(neighbor);
-				queue.push([neighbor, steps + 1]);
-			}
-		}
-	}
-	return -1;
-}
-
-// random file selection
-if (files.length < 2) {
-	dv.paragraph("not enough files in your vault!");
-} else {
-	const shuffledFilepaths = files.path.sort(() => Math.random() - 0.5);
-	const randomFilepaths = shuffledFilepaths.slice(0, 2);
-	let filepath1 = randomFilepaths[0];
-	let filepath2 = randomFilepaths[1];
-
-	dv.paragraph(`selected files: \n ${filepath1}, \n ${filepath2}`);
-	let component1 = nodeToComponent.get(filepath1);
-	let component2 = nodeToComponent.get(filepath2);
-	dv.paragraph(`component#: \n ${component1}, ${component2}`)
-
-	// calculation
-	if (component1 === component2) {
-		let pathLength = shortestStep(graph, filepath1, filepath2);
-		dv.paragraph(`shortest path: ${pathLength}`);
-	} else {
-		dv.paragraph(`belong to different components`);
-	}
-}
-
-dv.paragraph("task 3 completed")
-dv.paragraph("---")
-
-dv.paragraph("##### task 4: print shortest path #####")
 
 // broadth first search
 function shortestPath(graph, start, goal) {
@@ -156,7 +88,7 @@ function path2link(path) {
 	return page.file.link;
 }
 
-// random file selection
+// random file selection and find shortest path
 if (files.length < 2) {
 	dv.paragraph("not enough files in your vault!");
 } else {
@@ -187,10 +119,30 @@ if (files.length < 2) {
 }
 ```
 
+出力例を以下にお示しします。現状、ランダムに選択した二つのファイルに対して、スタートからゴールまで最短何ステップで到達できるか、その際の経路の一例を出力するようにコードを作成しています。難易度調節が全くできていないので、現時点では答えを考える、というより答えを見て感動するゲームになってしまっています。
 
-## これからやること
-#### 1. データベースの整理
-#### 2. 新しい機能の実装
+~~~
+start: c14-皮膚科/c149999-結節性紅斑.md,  
+goal: c07-脳神経/c070900-tre-エンタカポン.md
+
+component#:  
+0, 0
+
+shortest step: 3
+
+path example:
+
+- [c149999-結節性紅斑]
+↓
+- [c019999-潰瘍性大腸炎]
+↓
+- [c010000-sym-下痢]
+↓
+- [c070900-tre-エンタカポン]
+~~~
+
+ここら辺も踏まえて、改良を加えていきたいと思います。ステップ数に上限を加えるなど、難易度調節は必要かな、、あとは、リンクに重みを加えてみたいとも考えています。「ファイルにその単語がいくつ現れているか」「禁忌の組み合わせかどうか」といった指標を基にリンクに重みを加えることで、ゲーム性がさらに向上するかなと思っています。Medicidianの今後の発展にご期待ください！！
+ソースコードはGitHub上にあげてあります。[こちら](https://github.com/SoilWell316p/medicidian)からぜひご覧ください！
 
 ## 参考文献
 1. [Obsidianを医学の勉強に使う方法（しおん）](https://note.com/shion_medical/n/nc8dc9c359372)
@@ -198,4 +150,4 @@ if (files.length < 2) {
 3. [ゼロからはじめるObsidian案内](https://qiita.com/hann-solo/items/22bcaa81b695ddb47238)
 4. [ObsidianでPKMを続けられた理由を振り返る](https://minerva.mamansoft.net/%F0%9F%93%98Articles/%F0%9F%93%98Obsidian%E3%81%A7PKM%E3%82%92%E7%B6%9A%E3%81%91%E3%82%89%E3%82%8C%E3%81%9F%E7%90%86%E7%94%B1%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B)
 5. [効率的に成長するためのデジタルノート術 (Obsidian x Zettelkasten/LYT framework)](https://qiita.com/YUM_3/items/a5ad1aa45f7463ee4218)
-6. アルゴリズムとデータ構造（けんちょん）
+

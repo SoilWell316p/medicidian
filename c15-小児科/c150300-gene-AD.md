@@ -1,5 +1,13 @@
-- [[c071499-神経線維腫症 typeI]]
-- [[c029999-肥大型心筋症（HOCM）]]
-- [[c150706-Marfan症候群]]
-- [[c071003-筋強直性ジストロフィー]]
-- [[c070908-Huntington病]]
+---
+aliases: 
+tags: 
+status: false
+---
+## 概要
+---
+### other linked files
+```dataviewjs
+dv.list(
+dv.pages(`[[${this.currentFilePath}]]`)
+	.map(page => page.file.link))
+```

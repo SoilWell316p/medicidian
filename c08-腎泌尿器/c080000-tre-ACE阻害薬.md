@@ -1,6 +1,7 @@
 ---
 aliases:
   - ACEi
+  - カプトプリル
 tags:
   - "#treat"
 status:

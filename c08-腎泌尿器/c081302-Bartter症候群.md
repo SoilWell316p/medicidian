@@ -1,4 +1,11 @@
+---
+aliases: 
+tags:
+  - "#disease"
+status:
+---
 ## 疫学
+- 成人発症である
 ---
 ## 病態
 - ヘンレループ太い上行脚の==NKCCl輸送体==の障害
@@ -18,3 +25,11 @@
 ## セットで覚える疾患
 - [[c080000-tre-フロセミド]]：ループ利尿薬の乱用により偽性Bartterを生じる。
 - 基本的に、新生児、乳幼児に発症するので、成人で似たような症状が見られたら上記を疑う。
+
+---
+### other linked files
+```dataviewjs
+dv.list(
+dv.pages(`[[${this.currentFilePath}]]`)
+	.map(page => page.file.link))
+```

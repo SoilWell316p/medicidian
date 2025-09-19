@@ -1,5 +1,6 @@
 ---
-aliases: 
+aliases:
+  - パーキンソニズム
 tags: 
 status: false
 ---
