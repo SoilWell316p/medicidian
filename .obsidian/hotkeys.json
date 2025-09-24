@@ -1,12 +1,4 @@
 {
-  "insert-template": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": " "
-    }
-  ],
   "app:go-back": [
     {
       "modifiers": [
@@ -63,6 +55,14 @@
         "Mod"
       ],
       "key": "="
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "."
     }
   ]
 }

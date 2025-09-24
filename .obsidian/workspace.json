@@ -11,13 +11,46 @@
             "id": "20d54ae3de5fa6b8",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "template/033-findings.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "033-findings"
+            }
+          },
+          {
+            "id": "772d5fc8ca2c0a39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "template/030-history.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "030-history"
+            }
+          },
+          {
+            "id": "85815a4d8e7b0158",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,8 +195,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -176,12 +209,12 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 495.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,40 +225,40 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "20d54ae3de5fa6b8",
+  "active": "772d5fc8ca2c0a39",
   "lastOpenFiles": [
+    "template/020-symptom.md",
+    "template/031-physical.md",
+    "template/033-findings.md",
+    "README.md",
+    "c02-循環器/c020000-tre-◆α刺激薬.md",
+    "c02-循環器/c020000-tre-◆カルシウム遮断薬.md",
+    "c02-循環器/c020000-tre-◆◆抗不整脈薬.md",
+    "c02-循環器/c020000-sym-胸痛.md",
+    "c03-代謝内分泌/c039999-高プロラクチン血症.md",
+    "template/032-exam.md",
+    "template/030-history.md",
+    "template/040-disease.md",
+    "template/050-treatment.md",
+    "template/051-drug.md",
+    "template/014-organ.md",
+    "template/013-tissue.md",
+    "template/012-cell.md",
+    "template/011-system.md",
+    "template/010-molecule.md",
+    "template/000-origin.md",
     "function/020-symptom-pairs.md",
     "function/010-wikipedia-golf.md",
     "c19-麻酔/c190299-tre-緩徐全身麻酔.md",
     "c01-消化器/c019999-潰瘍性大腸炎.md",
     "c14-皮膚科/14-moc-disease.md",
     "c12-眼科/c120000-test-フレアセルフォトメーター.md",
-    "c00-症候学/c000000-sym-★不随意運動.md",
-    "c02-循環器/02-moc-diseases.md",
-    "c02-循環器/c020000-aus-Austin Flint雑音.md",
-    "c01-消化器/01-moc-diseases.md",
-    "c02-循環器/c020403-WPW症候群.md",
-    "c02-循環器/c020203-急性心不全.md",
-    "c02-循環器/c020202-右心不全.md",
-    "c01-消化器/c019999-劇症肝炎.md",
-    "c01-消化器/c019999-原発性硬化性胆管炎.md",
-    "c06-免疫膠原病/06-moc-diseases.md",
-    "c07-脳神経/c070603-亜急性連合性脊髄変性症.md",
-    "c07-脳神経/07-moc-diseases.md",
-    "c00-分野横断/c000000-base-HLA拘束性.md",
-    "c01-消化器/c019999-門脈圧亢進症.md",
-    "c01-消化器/c019999-Budd-Chiari症候群.md",
-    "c20-医学総論/c200000-epi-喫煙者.md",
-    "c00-症候学/00-moc-symptoms.md",
-    "c06-免疫膠原病/c060000-sym-発熱.md",
-    "c06-免疫膠原病/c060201-関節リウマチ.md",
-    "c06-免疫膠原病/c060000-blood-血清補体値低下.md",
     "desktop.ini",
     "Pasted image 20250424000045.png",
     "function",

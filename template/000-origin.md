@@ -1,6 +1,7 @@
 ---
-aliases: 
-tags: 
+aliases:
+tags:
+  - origin
 status: false
 ---
 ## 概要

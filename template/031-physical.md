@@ -1,12 +1,14 @@
 ---
-aliases: 
+aliases:
 tags:
-  - exam
+  - physical
 status: false
 ---
-## 所見の詳細
+## 概要
 ---
-## 鑑別疾患
+## 所見と鑑別疾患
+---
+## 禁忌
 ---
 ### other linked files
 ```dataviewjs

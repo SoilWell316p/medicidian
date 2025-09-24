@@ -7,6 +7,10 @@ status:
 ## 定義
 ---
 ## 鑑別疾患リスト
+### 覚え方
+### Critical
+### Common
+### その他
 ---
 ## 問診事項
 ### Epidemiology
@@ -16,6 +20,7 @@ status:
 ### Region
 ### Symptoms
 ### Time course
+### Red flag
 ---
 ## マストの検査事項
 ### Physical Exam

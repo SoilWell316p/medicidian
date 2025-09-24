@@ -1,13 +1,10 @@
 ---
 aliases:
 tags:
-  - base
-  - cell
+  - history
 status: false
 ---
-## 機能と局在
----
-## 関連疾患
+## 概要
 ---
 ### other linked files
 ```dataviewjs

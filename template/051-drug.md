@@ -12,7 +12,9 @@ status:
 ### 投与経路
 ### 代謝・排泄経路
 ---
-## 副作用・禁忌
+## 副作用
+---
+## 禁忌
 ---
 ### other linked files
 ```dataviewjs

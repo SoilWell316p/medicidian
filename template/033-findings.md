@@ -1,13 +1,13 @@
 ---
 aliases:
 tags:
-  - base
-  - cell
+  - exam
+  - findings
 status: false
 ---
-## 機能と局在
+## 所見の詳細
 ---
-## 関連疾患
+## 鑑別疾患
 ---
 ### other linked files
 ```dataviewjs
