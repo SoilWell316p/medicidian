@@ -3,21 +3,39 @@ aliases:
 tags:
   - "#disease"
 status:
+
 ---
 ## 疫学
+
 ---
 ## 病態
+
 ---
 ## 症状
+
 ---
 ## 検査
+### 身体所見
+### 検査所見
+#### スクリーニング
+#### 確定診断
+#### 重症度判定
+#### その他
+
 ---
 ## 治療
+### 急性期
+### 慢性期
+### 治療効果判定
+### 予後
+
 ---
 ## 禁忌
+
 ---
 ## セットで覚える疾患
 - [[c019999-腸重積]]
+
 ---
 ### other linked files
 ```dataviewjs
@@ -25,3 +43,4 @@ dv.list(
 dv.pages(`[[${this.currentFilePath}]]`)
 	.map(page => page.file.link))
 ```
+

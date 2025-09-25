@@ -4,49 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5430319486c8a873",
+        "id": "9a26c395998232c9",
         "type": "tabs",
         "children": [
           {
-            "id": "20d54ae3de5fa6b8",
+            "id": "c6b0b0372eae5130",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/033-findings.md",
+                "file": "c01-消化器/c019999-門脈圧亢進症.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "033-findings"
-            }
-          },
-          {
-            "id": "772d5fc8ca2c0a39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "c01-消化器/c019999-潰瘍性大腸炎.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "c019999-潰瘍性大腸炎"
-            }
-          },
-          {
-            "id": "85815a4d8e7b0158",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
+              "title": "c019999-門脈圧亢進症"
             }
           }
         ]
@@ -230,34 +202,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "20d54ae3de5fa6b8",
+  "active": "c6b0b0372eae5130",
   "lastOpenFiles": [
+    "c01-消化器/c019999-非びらん性胃食道逆流症.md",
+    "c01-消化器/c019999-特発性食道破裂.md",
     "c01-消化器/c019999-潰瘍性大腸炎.md",
-    "README.md",
-    "c14-皮膚科/c149999-Stevens Johnson症候群.md",
-    "c14-皮膚科/c149999-von Hippel Lindau病.md",
-    "c14-皮膚科/c149999-Vogt 小柳 原田病.md",
-    "c14-皮膚科/c149999-Sturge Weber症候群.md",
-    "c14-皮膚科/c149999-Kasabach Merritt症候群.md",
-    "c14-皮膚科/c149999-Churg Strauss症候群.md",
-    "c06-免疫膠原病/c069999-Wiskott Aldrich症候群.md",
-    "c01-消化器/c019999-Budd Chiari症候群.md",
-    "c15-小児科/c150599-Werdnig Hoffmann症候群（SMA typeI）.md",
-    "c15-小児科/c150728-先天性副腎皮質過形成 11β水酸化酵素欠損症.md",
-    "c15-小児科/c150729-先天性副腎皮質過形成 17α水酸化酵素欠損症.md",
-    "c15-小児科/c150727-先天性副腎皮質過形成 21水酸化酵素欠損症.md",
-    "c07-脳神経/c070504-Millard Gubler症候群.md",
-    "c07-脳神経/c079999-Waterhouse Friedrichsen症候群.md",
-    "c04-呼吸器/c049999-★II型呼吸不全.md",
-    "c02-循環器/c029999-★高血圧.md",
-    "c02-循環器/c020000-blood-心筋逸脱酵素.md",
-    "c02-循環器/c020000-aus-拡張期灌水様雑音.md",
-    "c02-循環器/c020000-aus-to and fro雑音.md",
-    "c02-循環器/c020000-aus-I音亢進.md",
-    "c02-循環器/c020000-aus-I音減弱.md",
-    "c02-循環器/c020000-aus-Austin Flint雑音.md",
-    "c02-循環器/c020000-aus-IIa音亢進.md",
-    "c02-循環器/c020000-aus-II音奇異性分裂.md",
+    "c01-消化器/c019999-腸重積.md",
+    "c01-消化器/c019999-虫垂炎.md",
+    "c01-消化器/c019999-中毒性巨大結腸症.md",
+    "c01-消化器/c019999-大腸癌.md",
+    "c01-消化器/c019999-上腸間膜動脈閉塞症.md",
+    "c01-消化器/c019999-自己免疫性肝炎.md",
+    "c01-消化器/c019999-原発性胆汁性胆管炎.md",
+    "c01-消化器/c019999-虚血性腸炎.md",
+    "c01-消化器/c019999-劇症肝炎.md",
+    "c01-消化器/c019999-原発性硬化性胆管炎.md",
+    "c01-消化器/c019999-急性膵炎.md",
+    "c01-消化器/c019999-逆流性食道炎.md",
+    "c01-消化器/c019999-肝性脳症.md",
+    "c01-消化器/c019999-肝細胞癌.md",
+    "c01-消化器/c019999-肝硬変.md",
+    "c01-消化器/c019999-過形成ポリープ.md",
+    "c01-消化器/c019999-萎縮性胃炎.md",
+    "c01-消化器/c019999-胃底腺ポリープ.md",
+    "c01-消化器/c019999-胃腺腫.md",
+    "c01-消化器/c019999-胃食道静脈瘤.md",
+    "c01-消化器/c019999-胃十二指腸潰瘍.md",
+    "c01-消化器/c019999-胃癌.md",
+    "c01-消化器/c019999-ヘリコバクターピロリ菌.md",
     "desktop.ini",
     "Pasted image 20250424000045.png",
     "function",
