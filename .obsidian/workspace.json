@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/030-history.md",
+                "file": "c01-消化器/c019999-潰瘍性大腸炎.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "030-history"
+              "title": "c019999-潰瘍性大腸炎"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -231,34 +230,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "772d5fc8ca2c0a39",
+  "active": "20d54ae3de5fa6b8",
   "lastOpenFiles": [
-    "template/020-symptom.md",
-    "template/031-physical.md",
-    "template/033-findings.md",
-    "README.md",
-    "c02-循環器/c020000-tre-◆α刺激薬.md",
-    "c02-循環器/c020000-tre-◆カルシウム遮断薬.md",
-    "c02-循環器/c020000-tre-◆◆抗不整脈薬.md",
-    "c02-循環器/c020000-sym-胸痛.md",
-    "c03-代謝内分泌/c039999-高プロラクチン血症.md",
-    "template/032-exam.md",
-    "template/030-history.md",
-    "template/040-disease.md",
-    "template/050-treatment.md",
-    "template/051-drug.md",
-    "template/014-organ.md",
-    "template/013-tissue.md",
-    "template/012-cell.md",
-    "template/011-system.md",
-    "template/010-molecule.md",
-    "template/000-origin.md",
-    "function/020-symptom-pairs.md",
-    "function/010-wikipedia-golf.md",
-    "c19-麻酔/c190299-tre-緩徐全身麻酔.md",
     "c01-消化器/c019999-潰瘍性大腸炎.md",
-    "c14-皮膚科/14-moc-disease.md",
-    "c12-眼科/c120000-test-フレアセルフォトメーター.md",
+    "README.md",
+    "c14-皮膚科/c149999-Stevens Johnson症候群.md",
+    "c14-皮膚科/c149999-von Hippel Lindau病.md",
+    "c14-皮膚科/c149999-Vogt 小柳 原田病.md",
+    "c14-皮膚科/c149999-Sturge Weber症候群.md",
+    "c14-皮膚科/c149999-Kasabach Merritt症候群.md",
+    "c14-皮膚科/c149999-Churg Strauss症候群.md",
+    "c06-免疫膠原病/c069999-Wiskott Aldrich症候群.md",
+    "c01-消化器/c019999-Budd Chiari症候群.md",
+    "c15-小児科/c150599-Werdnig Hoffmann症候群（SMA typeI）.md",
+    "c15-小児科/c150728-先天性副腎皮質過形成 11β水酸化酵素欠損症.md",
+    "c15-小児科/c150729-先天性副腎皮質過形成 17α水酸化酵素欠損症.md",
+    "c15-小児科/c150727-先天性副腎皮質過形成 21水酸化酵素欠損症.md",
+    "c07-脳神経/c070504-Millard Gubler症候群.md",
+    "c07-脳神経/c079999-Waterhouse Friedrichsen症候群.md",
+    "c04-呼吸器/c049999-★II型呼吸不全.md",
+    "c02-循環器/c029999-★高血圧.md",
+    "c02-循環器/c020000-blood-心筋逸脱酵素.md",
+    "c02-循環器/c020000-aus-拡張期灌水様雑音.md",
+    "c02-循環器/c020000-aus-to and fro雑音.md",
+    "c02-循環器/c020000-aus-I音亢進.md",
+    "c02-循環器/c020000-aus-I音減弱.md",
+    "c02-循環器/c020000-aus-Austin Flint雑音.md",
+    "c02-循環器/c020000-aus-IIa音亢進.md",
+    "c02-循環器/c020000-aus-II音奇異性分裂.md",
     "desktop.ini",
     "Pasted image 20250424000045.png",
     "function",
