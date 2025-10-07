@@ -32,6 +32,15 @@ dis_files.forEach(f => {
   opt.label = f.basename;         
   fileListDis.appendChild(opt);
 });
+// for physical
+const fileListPhy = dv.el("datalist");
+fileListPhy.id = "vault-files-phy";
+phy_files.forEach(f => {
+  const opt = document.createElement("option");
+  opt.value = f.path;             
+  opt.label = f.basename;         
+  fileListPhy.appendChild(opt);
+});
 
 
 // utilities
@@ -43,13 +52,24 @@ function editDict (links, dict) {
 };
 
 function makeLinks (file) {
-	let outlinks = file.outlinks.filter(link => dv.page(link)).filter(link => !link.path.includes("-moc-"));
-	let inlinks = file.inlinks.filter(link => dv.page(link)).filter(link => !link.path.includes("-moc-"));
+	const isReal = (l) => dv.page(l);
+	const notMoc = (l) => !l.path?.includes("-moc-");
+	const hasDisease = (l) => {
+		const p = dv.page(l);
+		if (!p) return false;
+		const tags = (p.file?.tags ?? []).map(t => t.startsWith('#') ? t.slice(1) : t); 
+		const etags = (p.file?.etags ?? []);
+		return tags.includes('disease') || etags.includes('#disease');
+	};
+	
+	let outlinks = file.outlinks.filter(isReal).filter(notMoc).filter(hasDisease);
+	let inlinks = file.inlinks.filter(isReal).filter(notMoc).filter(hasDisease);
+	
 	let path2link = {};
 	editDict(outlinks, path2link);
 	editDict(inlinks, path2link);
-	let uniqueLinks = Object.values(path2link);
-	return uniqueLinks;
+	
+	return Object.values(path2link);
 };
 
 
@@ -100,14 +120,78 @@ b1.onclick = async () => {
   };
   addRow();
   addRow();
+ 
+  container.appendChild(fileListDis);
   
   // calculate ddx when CHECK is pressed
   b2.onclick = () => {
     try {
+      const inputs = Array.from(
+        cont.querySelectorAll('input[list="vault-files-dis"]')
+      );
+      const rawVals = inputs.map(i => i.value.trim()).filter(v => v);
+      
+      
       const page = dv.page(target.path);
       const ddx_list = makeLinks(page.file);
-      dv.paragraph("他に挙げられる鑑別は、、、");
-      dv.list(ddx_list);
+      const ddx_paths = ddx_list.map(l => l.path);
+      
+      // compare sets 
+      const setAns = new Set(rawVals);
+      const setDdx = new Set(ddx_paths);
+      
+      const correct = rawVals.filter(p => setDdx.has(p));
+      const over = rawVals.filter(p => !setDdx.has(p));
+      const missing = ddx_paths.filter(p => !setAns.has(p));
+      
+      const base = (p) => p.split("/").pop().replace(/\.md$/i, "");
+      const toWiki = (p) => `[[${p}|${base(p)}]]`;
+      
+      const fmt = {
+        correct: correct.map(p => `⭕️ ${toWiki(p)}`),
+        over:    over.map(p    => `➕ ${toWiki(p)}`),
+        missing: missing.map(p => `➖ ${toWiki(p)}`)
+      };
+
+      const score = correct.length - over.length - missing.length;
+      
+      dv.paragraph("判定：");
+      if (fmt.correct.length) { dv.paragraph("**correct**"); dv.list(fmt.correct); }
+      if (fmt.over.length)    { dv.paragraph("**over**");    dv.list(fmt.over); }
+      if (fmt.missing.length) { dv.paragraph("**missing**"); dv.list(fmt.missing); }
+
+      dv.paragraph(`**Score:** ${score}  （⭕️ = +1, ➖/➕ = -1）`);
+      
+      
+      // arrange UI
+      const b3 = dv.el("button", "NEXT");
+      b3.style = "color:white; background: darkred;";
+      b3.onclick = () => {
+        dv.paragraph("---");
+        dv.paragraph("## 問診と身体診察");
+        dv.paragraph("行う身体診察をあげてください");
+        
+        const cont1 = dv.el("div");
+        // list up necessary physical assessment
+        function addRow1() {
+          const row = dv.el("div");
+          row.style = "margin-bottom: 5px;"
+          const a = dv.el("input");
+          a.style = "font-size: large; margin-right: 10px; width: 80%;"
+          a.setAttr("list", "vault-files-phy");
+          a.placeholder = "診察項目を選択してください";
+          const b = dv.el("button", "ADD");
+          b.style = "color:white; background: darkblue;"
+          b.onclick = addRow1;
+          row.appendChild(a);
+          row.appendChild(b);
+          cont1.appendChild(row);
+        };
+        addRow1();
+        addRow1();         
+        
+      };
+      
     } catch (e) {
       console.error(e);
       new Notice("DDX retirieve error");
