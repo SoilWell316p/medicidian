@@ -8,20 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c6b0b0372eae5130",
+            "id": "05d5024b4875a9df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "c01-消化器/c019999-門脈圧亢進症.md",
+                "file": "c02-循環器/c020000-sym-胸痛.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "c019999-門脈圧亢進症"
+              "title": "c020000-sym-胸痛"
+            }
+          },
+          {
+            "id": "a950b269d39ababf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "function/030-clinical-reasoning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "030-clinical-reasoning"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,6 +63,16 @@
             }
           },
           {
+            "id": "ba5fb3263705caea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
             "id": "bcfed3b1ff42342e",
             "type": "leaf",
             "state": {
@@ -62,16 +87,6 @@
               },
               "icon": "lucide-search",
               "title": "Search"
-            }
-          },
-          {
-            "id": "ba5fb3263705caea",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
             }
           },
           {
@@ -102,6 +117,34 @@
         "id": "0449daf27c0c317e",
         "type": "tabs",
         "children": [
+          {
+            "id": "301d1a6766d7f171",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "function/010-wikipedia-golf.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "010-wikipedia-golf"
+            }
+          },
+          {
+            "id": "be2addeb7d9ad9df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "function/020-symptom-pairs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "020-symptom-pairs"
+            }
+          },
           {
             "id": "68195b12d40495c4",
             "type": "leaf",
@@ -181,11 +224,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 495.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,34 +245,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c6b0b0372eae5130",
+  "active": "a950b269d39ababf",
   "lastOpenFiles": [
-    "c01-消化器/c019999-非びらん性胃食道逆流症.md",
+    "function/020-symptom-pairs.md",
+    "function/030-clinical-reasoning.md",
     "c01-消化器/c019999-特発性食道破裂.md",
-    "c01-消化器/c019999-潰瘍性大腸炎.md",
-    "c01-消化器/c019999-腸重積.md",
-    "c01-消化器/c019999-虫垂炎.md",
-    "c01-消化器/c019999-中毒性巨大結腸症.md",
-    "c01-消化器/c019999-大腸癌.md",
-    "c01-消化器/c019999-上腸間膜動脈閉塞症.md",
-    "c01-消化器/c019999-自己免疫性肝炎.md",
-    "c01-消化器/c019999-原発性胆汁性胆管炎.md",
-    "c01-消化器/c019999-虚血性腸炎.md",
-    "c01-消化器/c019999-劇症肝炎.md",
-    "c01-消化器/c019999-原発性硬化性胆管炎.md",
-    "c01-消化器/c019999-急性膵炎.md",
-    "c01-消化器/c019999-逆流性食道炎.md",
-    "c01-消化器/c019999-肝性脳症.md",
-    "c01-消化器/c019999-肝細胞癌.md",
-    "c01-消化器/c019999-肝硬変.md",
-    "c01-消化器/c019999-過形成ポリープ.md",
-    "c01-消化器/c019999-萎縮性胃炎.md",
-    "c01-消化器/c019999-胃底腺ポリープ.md",
-    "c01-消化器/c019999-胃腺腫.md",
-    "c01-消化器/c019999-胃食道静脈瘤.md",
-    "c01-消化器/c019999-胃十二指腸潰瘍.md",
-    "c01-消化器/c019999-胃癌.md",
-    "c01-消化器/c019999-ヘリコバクターピロリ菌.md",
+    "c04-呼吸器/c049999-緊張性気胸.md",
+    "c04-呼吸器/c049999-肺血栓塞栓症.md",
+    "c02-循環器/c029999-大動脈解離.md",
+    "function/000-test.md",
+    "c02-循環器/c020000-sym-胸痛.md",
+    "function/010-wikipedia-golf.md",
+    "c00-症候学/c000000-phy-頭部変形.md",
+    "c00-症候学/030-clinical reasoning.md",
+    "function/Untitled.base",
+    "c00-症候学/c000000-phy-副鼻腔圧痛.md",
+    "c00-症候学/c000000-phy-眼球結膜黄染.md",
+    "c00-症候学/c000000-phy-眼瞼結膜貧血.md",
+    "c00-症候学/c000000-phy-脊柱叩打痛.md",
+    "c00-症候学/c000000-phy-CVA叩打痛.md",
+    "c00-症候学/c000000-phy-呼吸音減弱.md",
+    "c00-症候学/c000000-phy-wheeze.md",
+    "c00-症候学/c000000-phy-fine crackles.md",
+    "c00-症候学/c000000-phy-coarse crackles.md",
+    "c00-症候学/c000000-phy-呼吸補助筋の使用.md",
+    "c00-症候学/c000000-phy-項部硬直.md",
+    "c00-症候学/c000000-phy-.md",
+    "c00-症候学/c000000-phy-甲状腺腫大.md",
+    "c08-腎泌尿器/Untitled.md",
+    "c08-腎泌尿器/c089999-反射性尿失禁.md",
+    "c01-消化器/Untitled.base",
     "desktop.ini",
     "Pasted image 20250424000045.png",
     "function",
@@ -239,8 +284,6 @@
     "c06-感染症/c0602-消化器の感染症/desktop.ini",
     "c07-脳神経/c0706-脊髄障害/c0706-総論/desktop.ini",
     "c07-脳神経/c0700-総論/c070000-sym-歩行の異常/desktop.ini",
-    "c11-運動器整形外科 1",
-    "c00-分野横断",
     "Untitled.canvas",
     "Pasted image 20241206175557.png",
     "Pasted image 20240926173312.png"

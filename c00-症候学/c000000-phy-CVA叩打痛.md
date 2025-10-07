@@ -1,14 +1,14 @@
-## 疫学
 ---
-## 病態
+aliases:
+tags:
+  - physical
+status: false
 ---
-## 症状
+## 概要
 ---
-## 検査
+## 所見と鑑別疾患
 ---
-## 治療
----
-## セットで覚える疾患
+## 禁忌
 ---
 ### other linked files
 ```dataviewjs
