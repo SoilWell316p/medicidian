@@ -1,6 +1,6 @@
 ---
 symptom1: "[[c060000-sym-発熱]]"
-symptom2: "[[c000000-sym-上肢痛]]"
+symptom2: "[[c071900-sym-頭痛]]"
 ---
 
 ```dataviewjs

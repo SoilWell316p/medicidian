@@ -10,7 +10,7 @@ const container = dv.el("div");
 // phy_file: physical assessment
 const sym_files = app.vault.getMarkdownFiles().filter(f => f.path.includes("-sym-"));
 const dis_files = dv.pages('#disease').map(p => p.file).array();
-const phy_files = dv.pages('#physical').map(p => p.file).array();
+const phy_files = dv.pages('#physical or #history').map(p => p.file).array();
 
 
 // make datalist
@@ -155,7 +155,7 @@ b1.onclick = async () => {
 
       const score = correct.length - over.length - missing.length;
       
-      dv.paragraph("判定：");
+      dv.paragraph("### 判定：");
       if (fmt.correct.length) { dv.paragraph("**correct**"); dv.list(fmt.correct); }
       if (fmt.over.length)    { dv.paragraph("**over**");    dv.list(fmt.over); }
       if (fmt.missing.length) { dv.paragraph("**missing**"); dv.list(fmt.missing); }
@@ -169,21 +169,26 @@ b1.onclick = async () => {
       b3.onclick = () => {
         dv.paragraph("---");
         dv.paragraph("## 問診と身体診察");
-        dv.paragraph("行う身体診察をあげてください");
+        dv.paragraph("必要な問診項目・身体診察をあげてください：");
         
         const cont1 = dv.el("div");
         // list up necessary physical assessment
         function addRow1() {
           const row = dv.el("div");
           row.style = "margin-bottom: 5px;"
-          const a = dv.el("input");
-          a.style = "font-size: large; margin-right: 10px; width: 80%;"
-          a.setAttr("list", "vault-files-phy");
-          a.placeholder = "診察項目を選択してください";
+          const a1 = dv.el("input");
+          a1.style = "font-size: large; margin-right: 10px; width: 40%;"
+          a1.setAttr("list", "vault-files-phy");
+          a1.placeholder = "診察項目を選択してください";
+          const a2 = dv.el("input");
+          a2.style = "font-size: large; margin-right: 10px; width: 40%;"
+          a2.setAttr("list", "vault-files-dis");
+          a2.placeholder = "想定疾患は？";
           const b = dv.el("button", "ADD");
           b.style = "color:white; background: darkblue;"
           b.onclick = addRow1;
-          row.appendChild(a);
+          row.appendChild(a1);
+          row.appendChild(a2);
           row.appendChild(b);
           cont1.appendChild(row);
         };
